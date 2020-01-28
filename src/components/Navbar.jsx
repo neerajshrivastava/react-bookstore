@@ -8,7 +8,8 @@ import { Link } from 'react-router-dom'
                     
                     <ul className="right">
                         <li><Link to="/">Shop</Link></li>
-                        <li><Link to="/cart">My Orders</Link></li>
+                        <li><Link to="/myOrders">My Orders</Link></li>
+                        <li><Link to="/cart">Cart</Link></li>
                     </ul>
                 </div>
             </nav>

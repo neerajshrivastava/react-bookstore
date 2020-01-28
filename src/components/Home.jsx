@@ -1,25 +1,34 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
 import { addToCart } from './actions/cartActions'
+import { showDetail } from './actions/cartActions'
 import bookImg from './../images/bookicon.png'
+
 class Home extends Component {
 
-    handleClick = (id) => {
+    handleAddToCart = (id) => {
         this.props.addToCart(id);
     }
-
+     
+    handleProductDetail = (id) => {
+        this.props.showDetail(id);
+    }
     render() {
         let itemList = this.props.items.map(item => {
             return (
                         <div className="card" key={item._id}>
-                            <div>
+                            
+                            <div onClick={()=>{this.handleProductDetail(item._id)}}>
+                            <Link to="/productdetails">
                                 <img src={bookImg} className="resbookimg"></img>
+                            </Link>
                             </div>
                             <div className="rsptext">
                                 <h1 className="h1txt">{item.title}</h1>
                                 <p className="price">{item.price}$</p>
                                 <p>Some detail about this book.</p>
-                                <p><button to="/" className="waves-effect waves-light red" onClick={() => { this.handleClick(item.id) }}>Add to Cart</button></p>
+                                <p><button to="/" className="waves-effect waves-light red" onClick={() => { this.handleAddToCart(item._id) }}>Add to Cart</button></p>
                             </div>
                         </div>
                     )
@@ -32,8 +41,9 @@ class Home extends Component {
                         </div>
                     </div>
                     )
-                }
-            }
+                
+    }
+}
 const mapStateToProps = (state)=>{
     return {
                         items: state.items
@@ -42,7 +52,8 @@ const mapStateToProps = (state)=>{
 const mapDispatchToProps= (dispatch)=>{
     
     return{
-                        addToCart: (id)=>{dispatch(addToCart(id))}
+                        addToCart: (id)=>{dispatch(addToCart(id))},
+                        showDetail: (id)=>{dispatch(showDetail(id))}
                     }
                 }
                 

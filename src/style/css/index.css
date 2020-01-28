@@ -15,6 +15,13 @@
   font-family: arial;
 }
 
+.marginR20{
+  margin-right: 20px;
+}
+.font1rm{
+  font-size: 1rem;
+}
+
 .price {
   color: grey;
   font-size: 22px;
@@ -35,6 +42,66 @@
 .card button:hover {
   opacity: 0.7;
 }
+
+.itemDetail {
+  margin: auto;
+  text-align: left;
+}
+
+.itemDetailLeft {
+  float: left;
+  width: 20%;
+}
+
+.itemDetailRight {
+  float: right;
+  width: 75%;
+}
+
+.itemDetail button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 25%;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.itemTitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.itemDetailBtnLeft {
+  float: left;
+  width: 50%;
+}
+
+.itemDetailBtnRight {
+  float: right;
+  width: 50%;
+}
+
+.item-desc{
+  align-self:center;
+}
+
+.myordLeftTxt {
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+
+.myordRightTxt {
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+
 /*Responsive Image CSS*/
 .resbookimg {
   width: 100%;
@@ -63,9 +130,27 @@
   line-height: 110%;
 }
 /*Responsive text CSS: End*/
+.addremovebtns{
+ font-size: 30px;
+}
 .cart{
   margin-top:40px;
 }
+
+.cartLeftPanel{
+  float: left;
+  width: 40%;
+}
+
+.cartRightPanel{
+  float: right;
+  width: 60%;
+}
+
+.shipAddTxtArea{
+  width: 80%;
+}
+
 .collection .collection-item{
   display: flex;
 }
@@ -81,6 +166,4 @@
   width: 150px;
   margin-right: 25px;
 }
-.item-desc{
-  align-self:center;
-}
+
