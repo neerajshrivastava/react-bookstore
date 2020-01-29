@@ -16,6 +16,7 @@ This simple application prototype shows how we can use React and Redux to build 
 2. npm install react-router-dom (Routing Pages)
 3. npm install redux react-redux (Store)
 4. npm install --save moment react-moment (JS date formatting)
+5. npm install redux-thunk (Asynchronous service call)
 
 # Getting started
 
