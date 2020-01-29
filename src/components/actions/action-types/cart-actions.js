@@ -7,4 +7,5 @@ export const ADD_QUANTITY = 'ADD_QUANTITY';
 export const ADD_SHIPPING = 'ADD_SHIPPING';
 export const SHOW_DETAIL = 'SHOW_DETAIL';
 export const MY_ORDERS = 'MY_ORDERS';
+export const FETCH_ITEMS_SUCCESS = 'FETCH_ITEMS_SUCCESS';
 
