@@ -21,6 +21,9 @@
 .marginR20 {
   margin-right: 20px;
 }
+.aligncenter {
+  text-align: center;
+}
 .font1rm {
   font-size: 1rem;
 }
@@ -87,6 +90,14 @@
   width: 100%;
   height: auto;
   max-width: 300px;
+}
+
+.showMore {
+  width: 30%;
+  height: auto;
+  background-color: #f3ccc7;
+  font-weight: bold;
+  color: #7b3401;
 }
 /* ***** Common : End ***** */
 
